@@ -3,19 +3,30 @@
 
 <body style="background-color:#4a0039;text:#ffffff">
 
-  <h1>Does Oras Love Kevin More?</h1>
+  <!-- The Core Elements of the Page to Display -->
+  <h1>Does Oras Love Kevin More?</h1><br><br>
+  <div id="result"></div><br><br>
+  <div id="explanation"></div>
 
+  <!-- The Javacript Injection Script Controling the Logic -->
   <script>
     // Generate a 50/50 probability of either outcome (assumes near equivalent amory, which seems to approximate reality)!
     // The Law of Large Numbers will elucidate whether this is in fact true. At present, the sampled experiences corroborate
     // this postulate (variance --> 0).
 
+    // Function to set the div-text
+    function setText(id,newvalue) {
+        var s= document.getElementById(id);
+        s.innerHTML = newvalue;
+    } 
+
     // Number Generation (no variance/stochasticity for now)
     randNum = Math.random();
     if (randNum >= 0.5) { // She loves he (Oras wins!)
-        alert('Oras Wins!');
+        window.onload=function() { setText("result","YES!");};
+        
     } else { // He loves she (Kevin wins!)
-        alert('Kevin Wins!');
+        window.onload=function() { setText("result","Nope!");};
     } 
   </script>
 
