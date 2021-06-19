@@ -5,7 +5,7 @@
 
   <!-- The Core Elements of the Page to Display -->
   <div style="color:white;font-size:75px;">Does Oras Love Kevin More?</div><br><br>
-  <div id="result" style="color:white;font-size:40px;"></div><br><br><br>
+  <div id="maintext" style="color:white;font-size:40px;"></div><br><br><br>
   <div id="explanation" style="color:white;font-size:20px;"></div><br>
 
   <!-- The Javacript Injection Script Controling the Logic -->
@@ -23,11 +23,11 @@
     // Number Generation (no variance/stochasticity for now)
     randNum = Math.random();
     if (randNum >= 0.5) { // She loves he (Oras wins!)
-        window.onload=function() { setText("result","YES!");};
+        window.onload=function() { setText("maintext","YES!");};
         window.onload=function() { setText("explanation","At this infintesimal moment in time, Oras' love is greater than Kevin's.");};
         
     } else { // He loves she (Kevin wins!)
-        window.onload=function() { setText("result","Nope!");};
+        window.onload=function() { setText("maintext","Nope!");};
         window.onload=function() { setText("explanation","At this infintesimal moment in time, Kevin's love is greater than Oras'.");};
     } 
   </script>
