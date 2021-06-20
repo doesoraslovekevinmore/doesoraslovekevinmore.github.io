@@ -24,23 +24,23 @@
     
     // Face Element
     var img = document.createElement("img");
-    src.appendChild(img);
-
+    var src = document.getElementById("facepic");    
+    
     // Number Generation (no variance/stochasticity for now)
     randNum = Math.random();
     if (randNum >= 0.5) { // She loves he (Oras wins!)
         window.onload=function() { 
             setText("maintext","Yes! <br><br>  <font size='2'>At this infintesimal moment in time, Oras' love is greater than Kevin's.</font>");
             img.src = "https://doesoraslovekevinmore.com/oras.png";
+            src.appendChild(img);
         };
     } else { // He loves she (Kevin wins!)
         window.onload=function() { 
             setText("maintext","Nope! <br><br>  <font size='2'>At this infintesimal moment in time, Kevin's love is greater than Oras'.</font>");
             img.src = "https://doesoraslovekevinmore.com/kevin.png";
+            src.appendChild(img);
          };
-    } 
-    var src = document.getElementById("facepic");
-    src.appendChild(img);
+    }
   </script>
 
   <p>Whenever this website is reloaded, it reveals instanteously whether <b>Oras</b> or <b>Kevin</b> loves the one more than the other! It is a known fact that <b>both love each other equally</b> in the long run (#lawoflargenumbers).<br> Yet, to resolve instantaneous disputes on immediate expressions of love, this website is the definitive reference!</p><br><br>
