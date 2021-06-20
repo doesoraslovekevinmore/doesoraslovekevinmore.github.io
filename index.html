@@ -29,11 +29,15 @@
     // Number Generation (no variance/stochasticity for now)
     randNum = Math.random();
     if (randNum >= 0.5) { // She loves he (Oras wins!)
-        window.onload=function() { setText("maintext","Yes! <br><br>  <font size='2'>At this infintesimal moment in time, Oras' love is greater than Kevin's.</font>");};
-        img.src = "https://doesoraslovekevinmore.com/oras.png";
+        window.onload=function() { 
+            setText("maintext","Yes! <br><br>  <font size='2'>At this infintesimal moment in time, Oras' love is greater than Kevin's.</font>");
+            img.src = "https://doesoraslovekevinmore.com/oras.png";
+        };
     } else { // He loves she (Kevin wins!)
-        window.onload=function() { setText("maintext","Nope! <br><br>  <font size='2'>At this infintesimal moment in time, Kevin's love is greater than Oras'.</font>");};
-        img.src = "https://doesoraslovekevinmore.com/kevin.png";
+        window.onload=function() { 
+            setText("maintext","Nope! <br><br>  <font size='2'>At this infintesimal moment in time, Kevin's love is greater than Oras'.</font>");
+            img.src = "https://doesoraslovekevinmore.com/kevin.png";
+         };
     } 
     var src = document.getElementById("facepic");
     src.appendChild(img);
