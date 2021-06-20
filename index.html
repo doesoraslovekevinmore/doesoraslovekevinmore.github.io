@@ -6,7 +6,7 @@
 <body style="background-color:#4a0039;color:#ffffff">
 
   <!-- The Core Elements of the Page to Display -->
-  <div style="color:white;font-size:75px;">Does Oras Love Kevin More?</div><br><br>
+  <div style="color:white;font-size:60px;">Does Oras Love Kevin More?</div><br><br>
   <div id="maintext" style="color:white;font-size:50px;"></div><br>
   <div id="facepic"></div><br>
 
@@ -30,14 +30,14 @@
     randNum = Math.random();
     if (randNum >= 0.5) { // She loves he (Oras wins!)
         window.onload=function() { 
-            setText("maintext","Yes! <br><br>  <font size='2'>At this infintesimal moment in time, Oras' love is greater than Kevin's.</font>");
+            setText("maintext","Yes!<br><font size='2'>At this infintesimal moment in time, </font><font size='3'>Oras' love is greater than Kevin's.</font>");
             img.src = "https://doesoraslovekevinmore.com/oras.png";
             img.style.width = "200px";
             src.appendChild(img);
         };
     } else { // He loves she (Kevin wins!)
         window.onload=function() { 
-            setText("maintext","Nope! <br><br>  <font size='2'>At this infintesimal moment in time, Kevin's love is greater than Oras'.</font>");
+            setText("maintext","Nope!<br><font size='2'>At this infintesimal moment in time, </font><font size='3'>Kevin's love is greater than Oras'.</font>");
             img.src = "https://doesoraslovekevinmore.com/kevin.png";
             img.style.width = "200px";
             src.appendChild(img);
